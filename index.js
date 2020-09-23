@@ -11,16 +11,16 @@ var schema = buildSchema(`
     nombre: String
         telefono: String
     }
- 
+
   type Query {
         clientes: [Cliente]
         cliente(id: Int): Cliente
     }
- 
+
   type Mutation {
         addCliente(nombre: String, telefono: String): Cliente
     }
- 
+
 `);
 
 var clientes = [];
